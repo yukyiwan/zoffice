@@ -1,0 +1,24 @@
+/* The following block can be included in a custom.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* make the customizations */
+$theme-colors: (
+  "primary": #be09b5,
+  "info": tomato,
+  "danger": teal,
+);
+
+// Override default variables before the import
+$body-bg: rgb(255, 255, 255);
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
