@@ -1,0 +1,32 @@
+
+.fluid {
+    width: 100vw  ; //This will make container to take screen width
+    height: 100vh ;
+
+  }
+.top{
+    text-align: right;
+    width:100vw;
+    height: 25vh ;
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 8px;
+    overflow: hidden;
+}
+
+.middle{
+    text-align: center;
+    width:100vw;
+    height: 50vh ;
+    display: table-cell;
+    vertical-align: middle;
+}
+.bottom{
+    text-align: left;
+    width:100vw;
+    height: 25vh ;
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+    overflow: hidden;
+}
