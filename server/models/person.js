@@ -30,7 +30,7 @@ const personSchema = new mongoose.Schema({
     },
     userType: {
         type: String,
-        default: 'admin'
+        default: 'member'
     },
     title: { 
         type: String,

@@ -30,11 +30,12 @@ const App = () => {
         
         <Router>
             <Switch>
-                <Route path="/PostLogin" component={PostLogin} />  
+                <Route path="/PostLogin" component={PostLogin} />   
                 <Route path="/Auth" component={Auth} />
                 <Route path="/Register" component={Register} />
                 <Route path="/Start" component={Start} />
-                <Route path="/" component={Home} />     
+                <Route path="/" component={Home} />  
+                    
             </Switch>
         </Router>
      );

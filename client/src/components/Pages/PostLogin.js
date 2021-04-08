@@ -1,34 +1,34 @@
-// import React from 'react';
-import React, {useEffect} from 'react';
-import {useSelector, useDispatch} from 'react-redux';
-import {getPersons} from '../../actions/persons';
+import React, {useState, useEffect} from 'react';
 import { Button, Form } from 'react-bootstrap';
-
-import {Route,BrowserRouter as Router, Switch, Link} from "react-router-dom";
+import { useDispatch } from 'react-redux'; 
 import { Container } from 'react-bootstrap';
 
 
-import Header from '../Header/Header';
-import Navbar from '../Navbar/Navbar';
-import Floorplan from '../Floorplan/Floorplan';
-
 const PostLogin = () => {
+    
+    const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
+    console.log(user);
 
-    const dispatch = useDispatch();
     useEffect(()=>{
-        dispatch(getPersons());
-    }, [dispatch]);
+        const token = user?.token;
 
+        setUser(JSON.parse(localStorage.getItem('profile')));
+    }, []);
+
+    // const logout = () => {
+    //     dispatch({ type: actionType.LOGOUT });
+    
+    //     history.push('/auth');
+    
+    //     setUser(null);
+    //   };
 
     return (
         <div>
-            <Header />
-            <Router>
-            <Switch>
-                <Route path="/" component={Floorplan} />  
-            </Switch>
-            </Router>
-            <Navbar />
+            <Container>
+            {/* <Image src="" fluid /> */}
+            {/* <Button variant="contained" color="secondary" onClick={logout}>Logout</Button> */}
+            </Container>
         </div>
     )
 }

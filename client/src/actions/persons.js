@@ -27,7 +27,6 @@ export const createPerson = (person) => async (dispatch) => {
         const { data } = await api.createPerson(person);
 
         dispatch ({ type: 'CREATE', payload: data });
-        
     } catch (error) {
         console.log(error);
     }

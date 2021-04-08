@@ -36,7 +36,9 @@ const FormAuth = () => {
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label className="formLabel">Password</Form.Label>
                     <Form.Control type="password" name="pwd" value={personData.pwd} onChange={(e) => setPersonData({ ...personData, pwd: e.target.value})}/>
-                
+                    <Form.Text className="text-muted">
+                    Not yet on Z-Office yet? <a href="/Register">Register</a>
+                    </Form.Text>
                 </Form.Group>
                 
                 <Button className="px-5" variant="primary" size="lg" type="submit">

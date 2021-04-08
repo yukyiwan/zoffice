@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 
 import './Register.scss';
 import FormReg from '../Form/FormReg';
-import ListPersons from '../List/Persons';
+import ListPersons from '../List/ListPerson';
 import { getPersons } from '../../actions/persons'
 
 const Register = () => {
@@ -24,9 +24,9 @@ const Register = () => {
                     <Col>
                         <FormReg />
                     </Col>
-                    {/* <Col>
+                    <Col>
                         <ListPersons />
-                    </Col> */}
+                    </Col>
                 </Row>
             </Container>
         </Container>

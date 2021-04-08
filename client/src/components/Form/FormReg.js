@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux'; 
+import { useHistory } from 'react-router-dom';
 import { createPerson } from '../../actions/persons';
 import FileBase from 'react-file-base64';
 
@@ -13,14 +14,18 @@ const FormReg = () => {
         pwd:'',
         title:'',
         dName:'',
-        profilePic:''
+        profilePic:'',
+        // seatNum:'',
+        // online:''
      });
 
+    const history = useHistory();
     const dispatch = useDispatch();
     // console.log(personData);
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(createPerson(personData));
+        dispatch(createPerson(personData,history));
+        window.location.replace("/PostLogin");
     }
 
     return ( 
