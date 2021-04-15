@@ -1,0 +1,21 @@
+.comDiv--position {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 130px);
+  top: 70px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+.comDiv--center {
+  position: absolut;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comImg--size {
+  width: 200px;
+}

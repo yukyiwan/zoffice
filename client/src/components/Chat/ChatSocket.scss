@@ -1,0 +1,42 @@
+.chatMbox--position {
+  position: relative;
+  width: 95%;
+  height: calc(100vh - 130px);
+  margin: 70px auto 60px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: space-between;
+}
+.chattitle--position {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.conver--position {
+  position: relative;
+  width: 95%;
+  height: calc(100vh - 330px);
+  overflow: auto;
+}
+.chatbox--position {
+  position: relative;
+  width: 95%;
+  border-top: 1px solid #eee;
+  height: 110px;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 60px;
+  color: #004e72;
+}
+.btn--width {
+  width: 120px;
+}

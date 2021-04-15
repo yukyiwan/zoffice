@@ -1,0 +1,57 @@
+@mixin seat--basic {
+  position: absolute;
+  z-index: 4;
+}
+.seat--1 {
+  @include seat--basic;
+  top: 9%;
+  left: 7.2%;
+}
+
+.seat--2 {
+  @include seat--basic;
+  top: 9.4%;
+  left: 16.5%;
+}
+
+.seat--3 {
+  @include seat--basic;
+  top: 10%;
+  left: 26.4%;
+}
+
+.seat--4 {
+  @include seat--basic;
+  top: 48%;
+  left: 6.9%;
+}
+
+.seat--5 {
+  @include seat--basic;
+  top: 48%;
+  left: 16.6%;
+}
+
+.seat--6 {
+  @include seat--basic;
+  top: 47%;
+  left: 26.2%;
+}
+
+.seat--7 {
+  @include seat--basic;
+  top: 79.4%;
+  left: 9.4%;
+}
+
+.seat--8 {
+  @include seat--basic;
+  top: 87%;
+  left: 19.8%;
+}
+
+.seat--9 {
+  @include seat--basic;
+  top: 87%;
+  left: 30.6%;
+}

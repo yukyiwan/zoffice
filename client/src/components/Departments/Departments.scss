@@ -1,0 +1,89 @@
+.depDiv--position {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 70px auto 60px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  background: url('./floorplan.jpg') no-repeat;
+  background-size: auto 100%;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(66, 66, 66, 0.5);
+
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(255, 231, 12);
+    text-shadow: 2px 2px 5px rgb(36, 36, 36);
+    text-decoration: none;
+  }
+}
+.btn--add {
+  position: fixed;
+  left: 400px;
+  top: 95px;
+  color: rgb(216, 216, 216);
+  cursor: pointer;
+  z-index: 5;
+}
+@mixin btn--settings {
+  position: relative;
+  width: 100vw;
+  max-width: 500px;
+  height: calc(100vw / 2);
+  max-height: 250px;
+  vertical-align: middle;
+  background-size: 100% auto;
+}
+.btn01--flip {
+  background: url('./Button01.jpg') no-repeat;
+  @include btn--settings;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.btn01--flip:hover {
+  background: url('./Button01--flip.jpg') no-repeat;
+  @include btn--settings;
+}
+.btn02--flip {
+  background: url('./Button02.jpg') no-repeat;
+  @include btn--settings;
+}
+.btn02--flip:hover {
+  background: url('./Button02--flip.jpg') no-repeat;
+  @include btn--settings;
+}
+.btn03--flip {
+  background: url('./Button03.jpg') no-repeat;
+  @include btn--settings;
+}
+.btn03--flip:hover {
+  background: url('./Button03--flip.jpg') no-repeat;
+  @include btn--settings;
+}
+.btn04--flip {
+  background: url('./Button04.jpg') no-repeat;
+  @include btn--settings;
+}
+.btn04--flip:hover {
+  background: url('./Button04--flip.jpg') no-repeat;
+  @include btn--settings;
+}
+
+@media screen and (max-width: 500px) {
+  .btn--add {
+    left: 80%;
+  }
+}

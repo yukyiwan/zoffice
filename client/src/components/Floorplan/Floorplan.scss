@@ -1,0 +1,36 @@
+$header--height: 65px;
+
+.fpdiv--position {
+  position: relative;
+  width: calc((100vh - #{$header--height}* 2) * 1.78);
+  height: calc(100vh - 130px);
+  margin-top: 70px;
+  margin-bottom: 60px;
+  overflow: auto;
+  // border: 5px solid blue;
+}
+.img--position {
+  width: auto;
+  z-index: 1;
+  height: 100%;
+  overflow: auto;
+}
+
+.box--position {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+@media (hover: hover) {
+  .box--position {
+    width: auto;
+  }
+}
+@media (hover: none) {
+  .box--position {
+    width: 100vw;
+  }
+}

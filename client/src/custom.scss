@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* make the customizations */
+$theme-colors: (
+  'primary': #00d6f7,
+  'info': #004e72,
+  'danger': teal,
+);
+
+//fonts
+body {
+  font-family: 'Raleway', sans-serif;
+}
+h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #004e72;
+}
+h2 {
+  color: white;
+  font-size: 1.7rem;
+  line-height: 100px;
+  vertical-align: middle;
+}
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #004e72;
+}
+p {
+  color: white;
+  line-height: 100px;
+  vertical-align: middle;
+}
+.btn--color {
+  color: #ffffff !important;
+}
+.btn--color:hover {
+  color: #ffffff !important;
+}
+
+// Override default variables before the import
+$body-bg: rgb(255, 255, 255);
+
+.logo--width {
+  width: 180px;
+  margin: 0px auto;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.form--position {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//camera
+.video--placeholder {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 5px;
+  padding: 8px;
+}
+.videoStream {
+  display: none;
+}
+
+#canvas-cam {
+  display: none;
+}
+//end
+
+//camera
+.videoStream {
+  display: none;
+}
+
+#video-cam {
+  display: none;
+}
+
+#canvas-cam {
+  display: none;
+}
+
+#btn-send {
+  background-color: #00d6f7;
+}
+//end
+
+//flex center for login and register pages
+@mixin flexC {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexC {
+  @include flexC();
+}
+
+//end
+
+//avatar
+
+@mixin avatar--shape($width, $height) {
+  @if ($width <= $height) {
+    width: $width;
+    height: $width;
+    overflow: hidden;
+  } @else {
+    height: $height;
+    width: $height;
+    overflow: hidden;
+  }
+}
+
+.avatar--shape {
+  @include avatar--shape(56px, 56px);
+}
+
+@include media-breakpoint-up(sm) {
+  .logo--width {
+    width: 190px;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .logo--width {
+    width: 200px;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .logo--width {
+    width: 210px;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .logo--width {
+    width: 220px;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .video--placeholder {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+  }
+}
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';
+//end

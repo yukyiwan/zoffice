@@ -1,0 +1,100 @@
+.fbtn--color:hover {
+  color: #ffffff !important;
+}
+
+.tdiv--position {
+  text-align: right;
+  width: 100vw;
+  height: 25vh;
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 8px;
+  overflow: hidden;
+}
+
+.mdiv--position {
+  text-align: center;
+  width: 100vw;
+  height: 50vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+.bdiv--position {
+  text-align: left;
+  width: 100vw;
+  height: 25vh;
+  display: table-cell;
+  vertical-align: bottom;
+  padding-bottom: 8px;
+  overflow: hidden;
+}
+
+.circle-animation {
+  animation-name: circle-move;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes circle-move {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: scale(1.1);
+  }
+  45% {
+    opacity: 1;
+    filter: alpha(opacity=1);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=1);
+    transform: scale(1);
+  }
+}
+.logo-animation {
+  animation-name: logoMove;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes logoMove {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: scale(1.5);
+  }
+  45% {
+    opacity: 1;
+    filter: alpha(opacity=1);
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=1);
+    transform: scale(1);
+  }
+}
+.btn--animate {
+  animation-name: btn-appear;
+  animation-duration: 2.3s;
+}
+@keyframes btn-appear {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: scale(2);
+  }
+  60% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=1);
+    transform: scale(1);
+  }
+}
+
+.hbtn--width {
+  width: 150px
+}
